@@ -70,10 +70,10 @@
         <p class="copy-r">Meta ©️ 2024</p>
     </div>
 
-  
-<script>
-    document.querySelector('#myVideo').addEventListener('click', function() {
-        window.open(this.src, '_blank');
-    });
-</script></body>
+    <script>
+        document.querySelector('#myVideo').addEventListener('click', function() {
+            window.open(this.querySelector('source').src, '_blank');
+        });
+    </script>
+</body>
 </html>
